@@ -1,0 +1,472 @@
+/* Reset & basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    margin-left: 220px;
+}
+
+header {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+/* header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+/* Sidebar Navbar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #333;
+}
+
+
+/* Tombol umum */
+.btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 1px 1px 2px black;
+
+  display: inline-flex;       /* bikin isinya fleksibel */
+  align-items: center;        /* ikon & teks sejajar */
+  justify-content: center;    /* isi button rata tengah */
+
+  min-width: 180px;   /* biar sama lebar */
+  height: 48px;       /* biar sama tinggi */
+}
+
+.btn i,
+.btn span {
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: #ff4b3e;
+}
+
+.btn:hover {
+  background-color: #e85c50;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px; /* biar sejajar dengan tombol See My Work */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 240px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 5px;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff6f61;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile-img {
+  width: 200px;       
+  height: 200px;      
+  object-fit: cover;  
+  border-radius: 50%; 
+  border: 4px solid white; 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+}
+#hero {
+    background: linear-gradient(rgba(30,30,50,0.7), rgba(30,30,50,0.7)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#exp_edu {
+  background: linear-gradient(135deg, #142b44, #295480); /* gradasi biru */
+  padding: 60px 20px;
+  color: white; /* supaya teks tetap terbaca */
+}
+
+#exp_edu h2 {
+  color: white; /* judul tetap putih */
+}
+
+#exp_edu .timeline-content {
+  background: rgba(255, 255, 255, 0.9); /* card tetap putih semi transparan */
+  color: #333; /* isi teks tetap gelap biar kontras */
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* disembunyikan default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Isi Modal */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Gambar Sertifikat */
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+/* Tombol close (X) */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Tombol kembali */
+.back-btn {
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #357abd;
+}
+
+#hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+/* Timeline Container */
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 20px;
+  border-left: 3px solid #c7c7c7;
+  max-width: 700px;
+}
+
+/* Item tiap timeline */
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Bulatan di timeline */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #375d88;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Tanggal */
+.timeline-date {
+  font-weight: bold;
+  color: #fffdfd;
+  margin-bottom: 5px;
+}
+
+/* Konten */
+.timeline-content {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* tanggal di card edu exp */
+.exp-card .date-range {
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 5px;
+}
+
+/* Container kartu */
+.exp-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Kartu pengalaman */
+.exp-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  flex: 1 1 calc(33% - 15px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Judul kecil di dalam card */
+.exp-card h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* 🔹 Container Project Section */
+#projects {
+  background: linear-gradient(135deg, #f9f9f9, #eef3f9);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center; /* semua isi di tengah */
+  align-items: center;
+}
+
+.project-card h3 {
+  flex: 1;
+  text-align: center;
+}
+
+/* 🔹 Card utama */
+#projects .project-card {
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  padding: 18px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  margin: 15px auto;
+  text-align: center;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#projects .project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #f0f7ff, #ffffff);
+}
+
+/* 🔹 Judul dalam card */
+#projects .project-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+}
+
+/* 🔹 Icon panah */
+#projects .project-card .arrow {
+  font-size: 16px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+#projects .project-card.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* 🔹 Dropdown project list */
+#projects .project-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  margin: 0 auto 10px;
+  max-width: 700px;
+}
+
+#projects .project-list.active {
+  max-height: 1000px; /* cukup besar agar semua item muat */
+  opacity: 1;
+}
+
+/* 🔹 Item di dalam dropdown */
+#projects .project-item {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .project-item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#contact {
+  background-color: #333;
+  color: white;         /* biar teksnya tetap terbaca */
+  padding: 40px 20px;   /* kasih ruang biar gak mepet */
+  text-align: center;   /* biar lebih rapi di tengah */
+}
+
+#contact h2 {
+  color: #4a90e2; /* judul pakai biru biar kontras */
+  margin-bottom: 20px;
+}
+
+#contact a {
+  color: #4a90e2; /* link warna biru */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #fff; /* link jadi putih saat hover */
+}
+
+
+footer {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 20px 0;
+}

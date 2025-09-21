@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loadtriani Oktavia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <aside class="sidebar">
+        <h1>Loadtriani Oktavia S</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#exp_edu">Education & Experiences</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <section id="hero">
+      <img src="image/pas foto (2).jpg" class="profile-img" />
+      <h2>Hello, I'm Loadtriani 🚀</h2>
+      <p>Data Analysis | Machine Learning | Basis data</p>
+
+      <!-- Tombol project -->
+      <a href="#projects" class="btn">✨ See My Project</a>
+
+      <!-- Tombol download resume -->
+      <a
+        href="CV_resume/CV_Loadtriani.pdf"
+        download="CV_Loadtriani.pdf"
+        class="btn resume-btn"
+      >
+        📄 Download Resume
+      </a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an Informatics graduate from Sanata Dharma University, Yogyakarta,
+        with interests in data mining, analytics, machine learning, and
+        front-end development. I enjoy working with data to build models and
+        solve problems while also creating interactive, user-friendly
+        interfaces. This lets me combine both the analytical side of data and
+        the creative side of web development. My goal is to grow as a
+        professional who contributes to data-driven solutions and builds
+        engaging front-end experiences.
+      </p>
+    </section>
+
+    <section id="exp_edu">
+      <h2>Education & Experience</h2>
+      <div class="timeline">
+        <!-- Sanata Dharma -->
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - 2025</div>
+          <div class="timeline-content">
+            <img src="image/sadhar.png" width="50" />
+            <h3>Sanata Dharma University</h3>
+            <p>Bachelor of Informatics</p>
+
+            <!-- Pengalaman selama kuliah -->
+            <div class="exp-container">
+              <!-- Card 1 -->
+              <div class="exp-card" data-modal="modal1">
+                <h4 class="date-range">Feb - Jun 2023</h4>
+                <h4>Teaching Assistant for Machine Learning Course</h4>
+                <p>
+                  Assisted students with Python programming and data analysis.
+                  Developed additional materials and practical exercises.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="exp-card" data-modal="modal2">
+                <h4 class="date-range">Sept - Oct 2023</h4>
+                <h4>Event Committee Member Informatika Belajar</h4>
+                <p>
+                  Actively organized Informatika Belajar, a two-month weekly
+                  program, designing innovative event concepts and interactive
+                  learning experiences.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="exp-card" data-modal="modal3">
+                <h4 class="date-range">Sept 2023</h4>
+                <h4>Food Beverage Coordinator</h4>
+                <p>
+                  Coordinated with vendors to ensure smooth operations, quality
+                  standards, and managed budgeted meals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMA -->
+        <div class="timeline-item">
+          <div class="timeline-date">2018 - 2021</div>
+          <div class="timeline-content">
+            <img src="image/smansa.jpeg" width="50" />
+            <h3>SMA 1 Negeri Sangatta Utara</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= MODALS ================= -->
+      <!-- Modal Sertifikat 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Certificate: Teaching Assistant</h3>
+          <img src="image/sertifML.jpg" alt="Certificate 1" />
+          <button class="back-btn">Back</button>
+        </div>
+      </div>
+
+      <!-- Modal Sertifikat 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Certificate: Event Committee</h3>
+          <img src="image/sertifIF.jpeg" alt="Certificate 2" />
+          <button class="back-btn">Back</button>
+        </div>
+      </div>
+
+      <!-- Modal Sertifikat 3 -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Certificate: Food Beverage Coordinator</h3>
+          <img src="image/sertifCO.jpeg" alt="Certificate 3" />
+          <button class="back-btn">Back</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section project -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Card Data Analysis -->
+        <div class="project-card toggle-card" data-target="data-analysis">
+          <h3>Data Analysis</h3>
+        </div>
+        <div id="data-analysis" class="project-list">
+          <div class="project-item">
+            <h3>
+              Comparison of K-Means and DBSCAN Algorithms for Clustering Bebras
+              Computational Thinking Challenge Data
+            </h3>
+            <p>
+              Conducted research comparing K-Means and DBSCAN on Bebras
+              Challenge data (317 students), finding that K-Means performed
+              better (SI=0.613 vs 0.493) and provided insights into grouping
+              students by computational thinking abilities.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>
+              Comparison of Naïve Bayes and K-Nearest Neighbors Algorithms for
+              Scholarship Applicant Data Classification
+            </h3>
+            <p>
+              Conducted a study on 1,107 scholarship applicants, showing Naïve
+              Bayes (73.36% accuracy) outperformed KNN (69.18%) to improve
+              selection decisions.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Predictive Analysis on HR Competency Scores for Screening</h3>
+            <p>
+              Conducted predictive analysis on HR competency scores, identifying
+              key factors for interview selection and showing Random Forest
+              (92%) outperformed Naïve Bayes (89%).
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>
+              Comparison of MNB and M-KNN in Dayak Maayan Sentiment Analysis
+            </h3>
+            <p>
+              Conducted a thesis on sentiment analysis for the Dayak Maayan
+              language, showing Multinomial Naïve Bayes (74.40%) outperformed
+              MKNN (68.60%), highlighting NLP's role in language preservation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card Web Development -->
+        <div class="project-card toggle-card" data-target="web-dev">
+          <h3>Web Development</h3>
+        </div>
+        <div id="web-dev" class="project-list">
+          <div class="project-item">
+            <h4>Campus Facility Reservation System</h4>
+            <p>
+              Developed a web-based system with my team to streamline student
+              borrowing and room reservations, enabling real-time availability
+              checks and reducing manual work.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>
+              Prototype Decision Support System for Selecting Guest Stars in
+              Yogyakarta Music Concerts Using the TOPSIS Method
+            </h4>
+            <p>
+              Developed a prototype decision support system using the TOPSIS
+              method to rank guest star candidates for a Yogyakarta music
+              concert based on popularity, cost, and location.
+            </p>
+          </div>
+        </div>
+        <!-- Card Machine Learning -->
+        <div class="project-card toggle-card" data-target="machineL">
+          <h3>Machine Learning</h3>
+        </div>
+        <div id="machineL" class="project-list">
+          <div class="project-item">
+            <h4>GAN Implementation</h4>
+            <p>
+              Implemented a Generative Adversarial Network (GAN) to generate
+              handwritten digits using the MNIST dataset. The model successfully
+              learned the distribution of the training data and produced
+              realistic digit images that closely resemble human handwriting.
+              This project demonstrates expertise in deep learning, generative
+              modeling, and TensorFlow, showcasing the potential of GANs for
+              creative AI and data augmentation.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Visualization Data Titanic</h4>
+            <p>
+              Implemented and compared multiple machine learning algorithms
+              (Logistic Regression, Random Forest, Naïve Bayes, SVM, Decision
+              Tree, Adaboost, and KNN) on the Titanic dataset. Achieved 100%
+              accuracy with six models, demonstrating strong classification
+              performance and providing insights into model suitability for
+              structured datasets.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>
+              Image Classification of Dogs, Cats, and Tigers Using TensorFlow
+              and Keras
+            </h4>
+            <p>
+              Built a deep learning model with TensorFlow/Keras for image
+              classification of dogs, cats, and tigers. The model was trained on
+              1,000 images and successfully tested on unseen data, correctly
+              predicting a tiger image.
+            </p>
+            <p>
+              <strong>Workflow:</strong> Dataset → Training → Testing →
+              Prediction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: loadtrianio12@gmail.com</p>
+      <p>LinkedIn: <a href="#">www.linkedin.com/in/loadtriani-oktavia</a></p>
+      <p>Github: <a href="#">https://github.com/loadtriani</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Load. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
