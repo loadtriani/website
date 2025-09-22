@@ -225,50 +225,94 @@ main, section, #hero, #exp_edu, #projects, #contact, footer {
 }
 
 /* HP */
+/* HP */
 @media (max-width: 768px) {
   .sidebar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 15px; /* navbar lebih ramping */
+  }
+
+  .sidebar h1 {
+    font-size: 16px;   /* judul lebih kecil */
+    margin-bottom: 8px;
   }
 
   .sidebar ul {
     flex-direction: column;
     width: 100%;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .sidebar ul li a {
+    font-size: 14px;   /* teks menu lebih kecil */
+    padding: 6px 8px;
+  }
+
+  #hero h2 {
+    font-size: 1.4rem; /* judul hero lebih kecil */
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+
+  #hero p {
+    font-size: 0.9rem; /* deskripsi lebih kecil */
+    margin-bottom: 15px;
   }
 
   .btn {
     display: block;
-    width: 80%;
+    width: 90%;       /* tombol lebih proporsional */
+    max-width: 250px;
+    font-size: 14px;
+    padding: 10px;
     margin: 10px auto;
   }
 
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 120px;     /* foto lebih kecil */
+    height: 120px;
   }
 }
 
 /* HP kecil */
 @media (max-width: 480px) {
+  .sidebar {
+    padding: 8px 12px;
+  }
+
   .sidebar h1 {
-    font-size: 16px;
+    font-size: 14px; /* judul sidebar lebih kecil */
+  }
+
+  .sidebar ul li a {
+    font-size: 13px;
+    padding: 5px 6px;
   }
 
   #hero h2 {
-    font-size: 2rem;
-    margin-top: 20px;
+    font-size: 1.2rem;   /* judul hero lebih kecil */
+    margin-top: 10px;
     color: #fff !important;
+    line-height: 1.3;
   }
 
   #hero p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    font-size: 0.8rem;   /* deskripsi lebih kecil */
+    margin-bottom: 12px;
   }
 
-  /* Tombol animasi */
+  .profile-img {
+    width: 100px;   /* foto lebih kecil */
+    height: 100px;
+  }
+
   .btn {
+    width: 95%;         /* tombol hampir full width */
+    max-width: 220px;
+    font-size: 13px;
+    padding: 8px 12px;
     transition: transform 0.2s ease, background 0.3s ease;
   }
 
@@ -276,6 +320,7 @@ main, section, #hero, #exp_edu, #projects, #contact, footer {
     transform: scale(1.05);
   }
 }
+
 
 /* 🔝 Tombol Scroll To Top */
 #scrollTopBtn {
