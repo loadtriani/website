@@ -61,3 +61,23 @@ document.querySelectorAll(".toggle-card").forEach(card => {
     targetList.classList.toggle("active");
   });
 });
+
+// Ambil tombol
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+// Saat scroll, cek posisi
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// Saat tombol diklik, scroll ke atas
+scrollBtn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
