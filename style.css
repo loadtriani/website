@@ -585,7 +585,7 @@ section {
   background: linear-gradient(135deg, #f0f7ff, #ffffff);
 }
 
-/* 🔹 Judul dalam card */
+/* headline */
 #projects .project-card h3 {
   margin: 0;
   font-size: 18px;
@@ -596,7 +596,7 @@ section {
   color: #333;
 }
 
-/* 🔹 Icon panah */
+/* 🔹 icon arrow */
 #projects .project-card .arrow {
   font-size: 16px;
   color: #333;
